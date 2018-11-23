@@ -14,7 +14,7 @@ public class TesteWeb {
 
 	@Test
 	public void test() {
-		System.setProperty("webdriver.chrome.driver", "C:/temp3/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.google.com");
 		// Procura o elemento html de entrada de texto pelo nome
@@ -26,7 +26,7 @@ public class TesteWeb {
 		System.out.println("O titulo da página é: " + driver.getTitle());
 		assertEquals("Selenium webdriver - Pesquisa Google",driver.getTitle());
 		// Fecha o browser
-		driver.quit();
+		//driver.quit();
 	}
 
 }

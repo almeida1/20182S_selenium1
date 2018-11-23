@@ -14,7 +14,7 @@ public class TestaIB {
 
 	@Test
 	public void test() {
-		System.setProperty("webdriver.chrome.driver", "C:/temp3/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://banco.bradesco/html/classic/index.shtm");
 		// Procura o elemento html de entrada de texto pelo nome
@@ -23,8 +23,6 @@ public class TestaIB {
 		element.sendKeys("1111");
 		element = driver.findElement(By.id("CTA"));
 		element.sendKeys("111111");
-		element = driver.findElement(By.id("DIGCTA"));
-		element.sendKeys("1");
 		element = driver.findElement(By.linkText("OK"));
 		element.click();
 		
